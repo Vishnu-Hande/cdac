@@ -1,17 +1,13 @@
 package day1;
-
-
 abstract class Shape
 {
 	double area;
 	abstract void calculateArea();
 	
 }
-
 class circle extends Shape
 {
 	int r;
-	
 	circle(int r)
 	{
 		this.r=r;
@@ -26,7 +22,6 @@ class circle extends Shape
 class rectangle extends Shape
 {
 	int l,b;
-	
 	public rectangle(int l,int b)
 	{
 		this.l=l;
@@ -47,7 +42,5 @@ public class CalArea {
 		
 		rectangle r = new rectangle(5,6);
 		r.calculateArea();
-		
-		
 	}
 }
